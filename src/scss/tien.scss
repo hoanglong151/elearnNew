@@ -1,0 +1,551 @@
+@import 'variable';
+
+.gv-pro{
+    table, th, td{
+        vertical-align: middle;
+        border: 1px solid lighten($color: #000000, $amount: 60%)
+    }
+    
+    .gv-tenmonhoc{
+        font-size: 18px;
+    }
+    .gv-situation-item{
+        border: 1px solid lighten($color: #000000, $amount: 80%);
+        
+        border-radius: 8px;
+        padding: 15px;
+        align-items: center;
+        align-self: center;
+        .row{
+            .col-7{
+                padding-right: 0;
+            }
+        }
+    }
+    .gv-situation-sl{
+        font-size: 80px;
+        color: lighten($color: #000000, $amount: 50%);
+        font-weight: bold;
+        padding-left: -50px;
+        
+
+    }
+    .gv-situation-btn{
+
+    }
+    .gv-datime-luong{
+        margin: 15px 0;
+    }
+    .gv-home-item{
+        margin-bottom: 15px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: lighten($color: $primary-color, $amount: 40%);
+    }
+    .gv-gioday{
+        font-size: 18px;
+    }
+    .gv-sl{
+        font-size: 30px;
+        font-weight: bold;
+        color: lighten($color: #000000, $amount: 50%);
+    }
+    .gv-hour{
+        color: lighten($color: #000, $amount: 50%);;
+    }
+    .btn-100{
+        width: 100%;
+        margin: auto 0;
+    }
+    .gv-feedback-now{
+       
+        padding: 3px;
+        border-radius: 3px;
+    }
+    .btn-yl{
+        background-color:darken($color:$yellow, $amount: 10%);
+        font-weight: bold;
+    }
+    .btn-gr{
+        background-color: darken($color: $green, $amount: 5%);
+        font-weight: bold;
+        color: #fff;
+
+    }
+    .gv-bg-table{
+        background-color: lighten($color: #000000, $amount: 80%);
+    }
+    .gv-listfeedback{
+        .gv-bg-table{
+            background-color: lighten($color: $green, $amount: 60%);
+        }
+        
+    }
+    .gv-situation-icon{
+        font-size: 48px;
+        color: darken($color: $primary-color, $amount: 0);
+    }
+    .gv-stituation-title{
+        font-size: 18px;
+        color: lighten($color: #000000, $amount: 40%);
+    }
+    .gv-situation-a{
+        color: lighten($color: #000000, $amount: 60%);
+    }
+    .gv-gioday{
+        color: lighten($color: #000000, $amount: 50%);
+    }
+    .gv-situation-sl{
+        
+            margin: 0;
+            align-items: flex-end;
+        
+    }
+    .gv-situation-item{
+        .row{
+            .col-5{
+                padding:8px 0 0 0;
+                
+                align-items: flex-end;
+            }
+        }
+
+    }
+    
+}
+
+.pay{
+    .pay-note{
+        .pay-note-text{
+            color: lighten($color: #000000, $amount: 50%);
+            .pay-note-icon{
+                color: $primary-color;
+                }
+            }
+        }
+    .pay-print-btn{
+        float: right;
+    }
+    .pay-title{
+        #pay-dotluong{
+            height: 40px;
+            font-size: 15px;
+            padding: 0;
+            border: 1px solid lighten($color: #000000, $amount: 90%);
+        }
+        .pay-pending{
+            font-size: 22px;
+            background: lighten($color: $primary-color, $amount: 35%);
+            padding: 5px;
+            border-radius: 3px;
+            color: $primary-color;
+        }
+        .pay-title-money{
+            .pay-title-dola{
+                color: $primary-color;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .pay-title-times{
+                color: $primary-txt-color;
+            }
+            
+        }
+    }
+    .kengang{
+        margin: 8px 0;
+        border: 1px solid darken($color: $primary-color, $amount: 10%);
+    }
+    .pay-border{
+        padding-left: 15px;
+        border: 1px solid lighten($color: #000000, $amount: 80%);
+        border-collapse: collapse ;
+    }
+    .pay-syn-title{
+        font-size: 18px;
+        color: lighten($color: #000000, $amount: 50%);
+        padding-bottom: 12px;
+    }
+    .pay-syn-money{
+        font-size: 28px;
+        color: lighten($color: $primary-color, $amount: 5%);
+        padding-bottom: 0px;
+    }
+    .pay-syn-text{
+        font-size: 14px;
+        color: lighten($color: #000000, $amount: 60%);
+    }
+    .pay-chitiet{
+        .gv-bg-table{
+            background-color: lighten($color: $green, $amount: 60%);
+        }
+        table, th, td{
+            border:1px solid lighten($color: #000000, $amount: 80%);
+        }
+        table{
+            border-collapse:collapse;
+        }
+        .btn-100{
+            width: 100%;
+            margin: auto 0;
+        }
+        .pay-icon-check{
+            color: lighten($color: $green, $amount: 0);
+        }
+        .pay-icon-times{
+            color: lighten($color: $red, $amount: 0);
+        }
+    }
+        
+}
+.clrm{
+    .clrm-notice{
+    
+        
+    }
+    .clrm-icon{
+        color: $primary-color;
+        margin-right: 5px;
+    }
+    .clrm-notice-text{
+        color: lighten($color: #000000, $amount: 50%);
+    }
+    .clrm-table{
+        
+            width: 100%;
+            table, th, td{
+                vertical-align: middle;
+                border:1px solid lighten($color: #000000, $amount: 80%);
+                p{
+                    margin-bottom: 0;
+                }
+                tr{
+                    .clrm-booked{
+                      
+                            background-color: lighten($color: $yellow, $amount: 10%);
+                            padding: 4px;
+                            border-radius: 4px;
+                            
+                            float: left;
+                       
+                        
+                    }
+                    .clrm-finish{
+                        background-color: lighten($color: $green, $amount: 20%);
+                            padding: 4px;
+                            border-radius: 4px;
+                            
+                            float: left;
+                    }
+                }
+            }
+            .bg-gray{
+                font-size: 16px;
+                background-color: lighten($color: #000000, $amount: 50%);
+            }
+            table{
+                border-collapse:collapse;
+            }
+            .icon-check{
+                color: $green;
+            }
+            .icon-times{
+                color: $red;
+            }
+            .canhdoc{
+                vertical-align: middle;
+            }
+            .table{
+                .clrm-datime{
+                    font-weight: bold;
+                    color: lighten($color: #000000, $amount: 40%);
+                }
+                .clrm-datime2{
+                    
+                    color: lighten($color: #000000, $amount: 60%);
+                }
+                .clrm-class{
+                    font-weight: bold;
+                    color: lighten($color: #000000, $amount: 40%);
+
+                }
+                .clrm-lession{
+                    color: lighten($color: #000000, $amount: 60%);
+                }
+                .clrm-ID{
+                    color: lighten($color: #000000, $amount: 80%);
+                }
+                .clrm-studentname{
+                    color: $primary-color;
+                    .clrm-icon-male{
+                        color: $green;
+                        font-size: 16px;
+                    }
+                    .clrm-icon-female{
+                        color: $red;
+                    }
+                }
+                .clrm-status{
+
+                }
+                .clrm-a-bnt{
+                    margin: 5px;
+                    float: left;
+                    display: block;
+                    padding:6px;
+                    border-radius: 4px;
+                    background-color: lighten($color: $yellow, $amount: 20%);
+                    .clrm-icon{
+                        color: lighten($color: #000000, $amount: 50%);
+                    }
+                }
+                }
+                .clrm-print-btn{
+                    
+                }
+            }
+            
+        
+    }
+    .clrm-done{
+        width: 100%;
+        height: 800px;
+        position: relative;
+        .img-done{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+    }
+.sup{
+    .collapse, .collapsed, .collapsing{
+        ul{
+            list-style: none;
+            color: lighten($color: #000000, $amount: 60%);
+            li{
+                padding: 2px;
+                color: lighten($color: #000000, $amount: 50%);
+                button{
+                    color: lighten($color: #000000, $amount: 50%);
+                    
+                    &:hover{
+                        color: $primary-color;
+                        
+                    }
+                }
+            }
+        }
+    }
+    .sub-menu{
+
+        div ul li button{
+            text-align: left;
+        }
+        p{
+            margin-bottom: 0;
+
+            a{
+                color: lighten($color: #000000, $amount: 30%);
+                font-weight: bold;
+                font-size: 16px;
+                text-align: left;
+            }
+        }
+    }
+    .sup-item{
+        .row{
+            border-bottom: 1px solid lighten($color: #000000, $amount: 75%);
+        }
+        .sup-contact-ans{
+            
+            .sup-contact-ans-item, .sup-contact-ans-item-admin{
+                .row{
+                    border-bottom: none;
+                }
+                
+                border: 1px solid $primary-color;
+                padding: 10px;
+                border-radius: 8px;
+                
+                .sup-contact-img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+                .sup-contact-name{
+                    font-weight: bold;
+                    color: lighten($color: #000000, $amount: 30%);
+                }
+                .sup-contact-time{
+                    color: lighten($color: #000000, $amount: 50%);
+                }
+                .sub-contact-text{
+                    padding-top: 30px;
+                    padding-left: 15px;
+                    color: lighten($color: #000000, $amount: 40%);
+                }
+                .sup-contact-btn-1{
+                    border: 1px solid $primary-color;
+                    color:$primary-color;
+                }
+                .sup-contact-btn-2{
+                    border: 1px solid lighten($color: #000000, $amount: 60%);
+                    color: lighten($color: #000000, $amount: 60%);
+                }
+            }
+            .sup-contact-ans-item-admin{
+                background: lighten($color: $green, $amount: 60%);
+                .sup-contact-btn-ok{
+                    color: $green
+                }
+            }  
+        }
+        table,th,td{
+            
+            vertical-align: middle;
+            border: 1px solid lighten($color: #000000, $amount: 60%);
+          }
+          table{
+            border-collapse: collapse;
+            border-radius: 8px;
+          }
+        
+        .table{
+            
+            .sup-item-table-tieude{
+                font-weight: bold;
+                color: lighten($color: #000000, $amount: 30%);
+               
+            .sup-item-table-ten, .sup-item-table-ma{
+                
+                color: lighten($color: #000000, $amount: 0%);
+                
+                
+            }
+            .sup-item-table-gio{
+                color: lighten($color: #000000, $amount: 50%);
+            }
+            }
+
+            
+        
+        
+        
+       
+            }
+            .sup-item-title{
+                font-weight: bold;
+                color: lighten($color: #000000, $amount: 20%);
+            }
+            .sup-item-text{
+                color: $primary-color;
+                font-size: 12px;
+            }
+            .sup-item-icon{
+                color: $primary-color;
+                font-size: 12px;
+            }
+}
+}
+.bg-xanh{
+    background-color: lighten($color: $green , $amount: 60%);
+}
+
+
+.st-title{
+    
+}
+.st-time{
+    .st-time-text{
+        color: lighten($color: $red, $amount: 0);
+        font-weight: bold;
+    }
+    .st-icon{
+        color: $primary-txt-color;
+    } 
+    .st-teacher-text{
+        .st-tengv{
+            color: $second-color;
+            font-weight: bold;
+        }
+
+    }
+}
+.clear{
+    clear: both;
+}
+
+.st-thangdanhgia{
+            .st-noidung-rating{
+                
+                color: $primary-txt-color;
+                font-weight: bold;
+                margin-right: 10px;
+                font-size: 14px;
+                .st-verygood{
+                    font-size: 13px;
+                    margin-left: 10px;
+                    font-weight: lighter;
+                    background: lighten($color: $primary-color-dark, $amount: 40%);
+                    padding: 4px;
+                    border-radius: 4px;
+
+                }
+            }
+            .st-icon-star{
+                color: $primary-color;
+            }
+      
+    
+}
+.st-danhgianguphap{
+    hr{
+        margin: 3px;
+    }
+    .st-item-danhgia{
+        .row{
+            .col-6{
+                padding-bottom: 3px;
+                p{
+                    padding-bottom: 3px;
+                    margin-bottom: 0;
+                }
+            }
+            .canhphai{
+                
+            }
+        }
+    }
+}
+
+.st-input{ 
+        border:$red;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: none;
+        border-bottom: 2px solid $primary-color;
+}
+.timngaythang{
+    font-weight: bold;
+    padding: 0 4px;
+}
+
+
+
+
+.st-thangdanhgia {
+    display: table;
+    .st-rating {
+        display: table-row;
+    }
+    
+    .cell {
+        display: table-cell;
+        &:first-child {
+            text-align: right;
+            padding-right:15px;
+        }
+    }
+}
