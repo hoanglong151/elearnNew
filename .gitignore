@@ -1,0 +1,14 @@
+node_modules/
+/dist
+**/.DS_STORE
+.DS_STORE
+.DS_Store
+*.DS_Store
+package-lock.json
+yarn-error.log
+src/**/.DS_STORE
+src/**/.DS_Store
+
+src/scss/.DS_Store
+test/
+.idea

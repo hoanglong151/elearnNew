@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+	<!-- BEGIN: Head-->
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui"
+		/>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="" />
+		<title>Zim demo new layout</title>
+		<link
+			rel="apple-touch-icon"
+			href="../assets/images/favicon/apple-touch-icon-152x152.png"
+		/>
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="../assets/img/favicon-zim.jpg"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<!-- vendor css -->
+		<link
+			href="../lib/@fortawesome/fontawesome-free/css/all.min.css"
+			rel="stylesheet"
+		/>
+		<link href="../lib/ionicons/dist/css/ionicons.min.css" rel="stylesheet" />
+		<link href="../lib/flatpickr/dist/flatpickr.min.css" rel="stylesheet" />
+		<link href="../lib/select2/dist/css/select2.min.css" rel="stylesheet" />
+		<link href="../lib/animate.css/animate.min.css" rel="stylesheet" />
+		<link href="../lib/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../assets/js/swiper/css/swiper.min.css" />
+		<!-- Mona CSS -->
+
+		<link rel="stylesheet" href="../assets/css/csscustom.css" />
+
+		<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+		<script src="../assets/js/utils.js"></script>
+		<script src="../lib/jquery/dist/jquery.min.js"></script>
+		<!-- Fomik -->
+		<!-- some additional css here -->
+	</head>
+	<!-- END: Head-->
+
+	<body>
+		<style>
+			.search-tab {
+				text-align: center;
+				padding: 0;
+				list-style: none;
+			}
+
+			.search-tab li {
+				display: inline-flex;
+				flex-grow: 1;
+			}
+
+			.search-nav li.nav-item {
+				flex-grow: 1;
+				font-weight: 600;
+				font-size: 17px;
+			}
+
+			.search-nav li.nav-item .nav-link {
+				height: 50px;
+			}
+
+			.search-nav li.nav-item .nav-link.active {
+				border-bottom: 5px solid #76bdff;
+			}
+
+			.date-week {
+				padding-top: 15px;
+				display: flex;
+			}
+
+			.date-week label {
+				font-weight: 600;
+				font-size: 16px;
+				flex-grow: 1;
+				background-color: #dddddd;
+				color: #6d6d6d;
+			}
+
+			.date-week label:hover {
+				background-color: #e6e1e1;
+				color: #6d6d6d;
+			}
+
+			.date-week label:not(:last-child) {
+				margin-right: 5px;
+			}
+
+			.date-week label p {
+				margin: 0;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+
+			.date-week label.checked:hover {
+				background-color: #e6e1e1;
+				color: #fd7e14;
+			}
+
+			.date-week label.checked {
+				color: #fd7e14;
+			}
+
+			.input-search-date {
+				position: absolute;
+				visibility: hidden;
+			}
+
+			.filter-row .left h5 {
+				margin: 0;
+				line-height: 2.5;
+			}
+
+			.filter-row .right .item {
+				padding: 5px;
+			}
+
+			.national-checkbox {
+				width: 25%;
+			}
+
+			.nationality.checked:after {
+				font-family: 'Font Awesome 5 Free';
+				color: #2477c6;
+				content: '\f058';
+				margin-left: 50px;
+			}
+
+			.totor-detail {
+				background-color: white;
+			}
+
+			.ul-schedule {
+				list-style: none;
+				padding: 0;
+				height: 200px;
+				overflow: auto;
+			}
+
+			.ul-schedule li {
+				display: flex;
+				align-items: center;
+				background: #f6f6f6;
+				align-items: center;
+				vertical-align: middle;
+				justify-content: space-between;
+			}
+
+			.ul-schedule li + li {
+				border-top: 1px solid #e1e1e1;
+			}
+			.ul-schedule li span.time {
+			}
+
+			.ul-schedule li span.status {
+				display: inline-block;
+			}
+
+			.ul-schedule li span.status button {
+				color: white;
+				background-color: #43adff;
+				border: none;
+				width: 100%;
+				border-radius: 3px;
+			}
+		</style>
+		<div id="js-component-profilesidebar"></div>
+		<div class="content content-fixed mg-t-0 mg-lg-t-60-f">
+			<div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0 ">
+				<div class="media d-block d-lg-flex ">
+					<i
+						class="fas fa-align-left fa-2x toggle-sidebar d-inline-block d-lg-none mg-b-15"
+					></i>
+
+					<!-- profile-sidebar -->
+					<div class="media-body body__content">
+						<div class="booking__container mg-b-30 " id="booking-information">
+							<div id="react-booking-lesson"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="../lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="../lib/feather-icons/dist/feather.min.js"></script>
+		<script src="../lib/moment/min/moment.min.js"></script>
+		<script src="../lib/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+		<script src="../lib/flatpickr/dist/flatpickr.min.js"></script>
+		<script src="../lib/select2/dist/js/select2.min.js"></script>
+		<script src="../assets/js/dashforge.js"></script>
+		<script src="../assets/js/swiper/js/swiper.min.js"></script>
+		<script src="../assets/js/custom.js"></script>
+		<script>
+			function showlist() {
+				$('#list-tutor').css({
+					display: 'block',
+				});
+			}
+			$('.date-week label').click(function() {
+				$(this).addClass('checked');
+				$('.date-week label')
+					.not($(this))
+					.removeClass('checked');
+			});
+			$(document).on('click', '.open-lessionwish', function() {
+				$('#div-lessionwish').modal();
+			});
+		</script>
+		<script>
+			//Dat JS Generate Slider Calendar
+		</script>
+	</body>
+</html>

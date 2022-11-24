@@ -1,0 +1,32 @@
+{
+  "presets": [["@babel/preset-env",{
+    "useBuiltIns": "usage",
+    "corejs": 3
+  }], "@babel/preset-react"],
+  "plugins": [
+    "@babel/plugin-proposal-export-default-from",
+    [
+      "babel-plugin-root-import",
+      {
+        "paths":[
+          {
+            "rootPathSuffix": "./src/lib/",
+            "rootPathPrefix": "~lib/"
+          },
+          {
+            "rootPathSuffix": "./src/",
+            "rootPathPrefix": "~src/"
+          },
+          {
+            "rootPathSuffix": "./src/assets/",
+            "rootPathPrefix": "~assets/"
+          },
+          {
+            "rootPathSuffix": "./src/components/",
+            "rootPathPrefix": "~components/"
+          }
+        ]
+      }
+    ]
+  ]
+}

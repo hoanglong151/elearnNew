@@ -1,0 +1,7 @@
+@import "../../scss/variable.scss";
+
+#contactsub {
+    @include media (1199px) {
+        margin-top: 10px;
+    }
+}
